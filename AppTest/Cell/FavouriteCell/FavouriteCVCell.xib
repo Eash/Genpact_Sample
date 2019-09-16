@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FavouriteCVCell" customModule="AppTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STV-VE-yg1">
+                        <rect key="frame" x="0.0" y="0.0" width="257" height="225"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AQ6-uh-wEM">
+                                <rect key="frame" x="0.0" y="0.0" width="257" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="YI9-ip-TO6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Labe lLabel Label Label Label Labe" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-3z-hUB">
+                                <rect key="frame" x="5" y="185" width="247" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBk-hB-XTU">
+                                <rect key="frame" x="212" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6E0-lA-f5r"/>
+                                    <constraint firstAttribute="width" constant="40" id="elz-JQ-kSA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="favourite"/>
+                                <connections>
+                                    <action selector="unfavouriteClickAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cNy-eT-El5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9TF-3z-hUB" firstAttribute="leading" secondItem="STV-VE-yg1" secondAttribute="leading" constant="5" id="00b-Q3-nXA"/>
+                            <constraint firstItem="OBk-hB-XTU" firstAttribute="top" secondItem="STV-VE-yg1" secondAttribute="top" constant="5" id="3IJ-go-nsX"/>
+                            <constraint firstAttribute="trailing" secondItem="OBk-hB-XTU" secondAttribute="trailing" constant="5" id="GVj-tU-HZp"/>
+                            <constraint firstAttribute="trailing" secondItem="AQ6-uh-wEM" secondAttribute="trailing" id="IrI-Fq-Pvt"/>
+                            <constraint firstItem="AQ6-uh-wEM" firstAttribute="leading" secondItem="STV-VE-yg1" secondAttribute="leading" id="L4j-rL-dKR"/>
+                            <constraint firstAttribute="bottom" secondItem="9TF-3z-hUB" secondAttribute="bottom" constant="5" id="SLE-Z2-LQ7"/>
+                            <constraint firstItem="9TF-3z-hUB" firstAttribute="top" secondItem="AQ6-uh-wEM" secondAttribute="bottom" constant="5" id="XXP-Ev-x9G"/>
+                            <constraint firstItem="AQ6-uh-wEM" firstAttribute="top" secondItem="STV-VE-yg1" secondAttribute="top" id="Yo7-jo-a4l"/>
+                            <constraint firstAttribute="trailing" secondItem="9TF-3z-hUB" secondAttribute="trailing" constant="5" id="bhD-Ir-APs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="STV-VE-yg1" secondAttribute="trailing" id="PTN-9H-zMf"/>
+                <constraint firstItem="STV-VE-yg1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="noM-Oi-BWf"/>
+                <constraint firstItem="STV-VE-yg1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uj4-4R-Xly"/>
+                <constraint firstAttribute="bottom" secondItem="STV-VE-yg1" secondAttribute="bottom" id="zSG-v3-7Dd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="257" height="249"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="0.0" height="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                    <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="favouriteBtn" destination="OBk-hB-XTU" id="C8Y-yq-YVz"/>
+                <outlet property="mealImg" destination="AQ6-uh-wEM" id="K0K-Xc-KrW"/>
+                <outlet property="mealNameLbl" destination="9TF-3z-hUB" id="A0i-0o-j5Y"/>
+            </connections>
+            <point key="canvasLocation" x="287.68115942028987" y="199.21875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favourite" width="30" height="30"/>
+    </resources>
+</document>
